@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceso Con Bootstrap</title>
+
+    <link rel="stylesheet" href="css/styleBoot.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <h1 class="text-center display-2 fw-bold">Ingreso Usuario</h1>
+    <header>
+        <ul class="nav nav-pills justify-content-center display-6 fs-4">
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="IndexHTML.html">Acceso con HTML</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="indexCSS.html">Acceso con CSS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="indexBootstrap.html">Acceso con Bootstrap</a>
+            </li>
+        </ul>
+    </header>
+    <div class="container-fluid">
+        <div class="d-flex justify-content-center">
+            <form>
+                <h2 class="display-5 mb-4 ">Autenticacion</h2>
+                <div class="col-md-8 mb-2">
+                    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner" style="width:255px;height: 255px;">
+                            <div class="carousel-item active">
+                                <img src="img/avatar.jpg" class="img-fluid img-thumbnail rounded-circle">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/avatar2.jpg" class="img-fluid img-thumbnail avatar rounded-circle">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/avatar3.jpg" class="img-fluid img-thumbnail avatar rounded-circle">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <label for="Username" class="col-form-label  text-center fs-3 fw-bolder">Usuario</label>
+                    <div class="col-sm-10 ">
+                        <input type="text" class="form-control" id="Username">
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <label for="Pass" class="formLabel text-center  fs-3 fw-bolder ">Password</label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control" id="Pass">
+                    </div>
+                </div>
+                <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
+                    data-bs-target="#ModalConfirmacion">Conectar</button>
+                <button type="reset" class="btn btn-warning btn-lg">Limpiar</button>
+            </form>
+        </div>
+    </div>
+    <!--Modal Inicio-->
+    <div class="modal fade" id="ModalConfirmacion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Credenciales</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <h4 class="display-6 text-center fw-bold">Credenciales Aceptadas</h4>
+                    <img src="img/confirmation.jpg" class="img-fluid img-thumbnail rounded-pill rounded-2">
+                </div>
+                <div class="modal-footer">
+                    <a href="Fin.html"><button type="button" class="btn btn-primary">Finalizar</button></a>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Modal fin-->
+</body>
+
+</html>

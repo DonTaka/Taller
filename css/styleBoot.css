@@ -1,0 +1,17 @@
+
+body {
+    size: 100%;
+    background-image: url("../img/fondo.jpg");
+    background-size: cover;
+    background-color: transparent;
+    
+}
+h1,
+h2 {
+    color: white;
+    font-weight: bold;
+}
+.avatar{
+    width: 255px;
+    height: 255px;
+}
